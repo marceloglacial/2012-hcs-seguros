@@ -1,0 +1,14 @@
+/*
+Theme Name: HCS Seguros
+Theme URI: http://wordpress.org/
+Description: Henrique Câmara Seguros
+Author: Marcelo Glacial
+Version: 1.0
+Tags: 
+*/
+
+
+/* Editr no CSS */
+body.voce #Conteudo #Texto {
+	background: url("../img/servicos-fundo.png") no-repeat left top;
+}

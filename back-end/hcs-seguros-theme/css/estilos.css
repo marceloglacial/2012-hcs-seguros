@@ -1,0 +1,507 @@
+/* Projeto: HCS Seguros
+   Desenvolvedor: Marcelo Glacial
+*/
+
+
+/* Reset  
+---------------------------------------------------------------------------------- */
+* {
+    margin:0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+hr {
+    display: none;
+}
+html {
+    background: #FFF;
+}
+body {
+
+}
+.hide {
+    display: none;
+}
+	img {
+	border:0;
+}
+
+
+/* Site
+---------------------------------------------------------------------------------- */
+#Site {
+    width:960px;
+    margin:0 auto;
+    position:relative;
+}
+
+/* Atalhos
+---------------------------------------------------------------------------------- */
+#Atalhos {
+    display:none;
+}
+
+/* Cabecalho
+---------------------------------------------------------------------------------- */
+#Cabecalho {
+    position: relative;
+	height:205px; /* influencia na altura do menu */
+	background: url("../img/topo.png") top center no-repeat;
+}
+#Cabecalho h1 a {
+	position: absolute;
+	top: 0;
+	left: 0;
+    display: block;
+    width: 280px;
+    height: 180px;
+	text-indent: -9999px;
+}
+#Cabecalho p {
+    display: none;
+}
+
+/* Menu
+---------------------------------------------------------------------------------- */
+#Menu {
+    position: absolute;
+    top: 175px;
+    right: 32px;
+}
+#Menu h2 {
+    display: none;
+}
+#Menu ul li {
+    list-style: none;
+    float: left;
+    padding-left: 25px;
+}
+#Menu ul li a {
+    font-family: "Times New Roman", Times;
+    font-size: 20px;
+	text-transform: lowercase;
+    color: #444;
+}
+#Menu ul li a:hover {
+    text-decoration: underline;
+}
+#Menu ul li ul li {
+	display:none;
+}
+
+/* Destaques
+---------------------------------------------------------------------------------- */
+#Destaques {
+    position: relative;
+    height: 430px;
+}
+#Destaques div.SliderName_2 {
+	padding: 0;
+	margin: 0px;
+    height: 430px;
+}
+#Destaques h2 {
+    display: none;
+}
+
+#Destaques h3 a {
+    position: absolute;
+    left:120px;
+    top: 145px;
+
+    font-family: "Times New Roman", Times;
+    font-size: 180%;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 1.5em;
+    color: #FFF;
+
+    width: 260px;
+    padding: 20px 30px;
+
+    background: rgba(0,0,0,0.3);
+    filter: alpha(opacity=30); /* IE? */
+}
+
+#Destaques .SliderNamePrev_2 {
+	height:430px;
+	left:20px;
+}
+#Destaques .SliderNameNext_2 {
+	height:430px;
+	right:20px;
+}
+
+#Navegacao {
+    position: absolute;
+    bottom: 5px;
+    left: 450px;
+	z-index:9999;
+}
+#Navegacao ol li {
+    float: left;
+    width: 25px;
+
+}
+
+#Navegacao ol li a {
+    display: block;
+    width: 15px;
+    height: 15px;
+    text-indent: -9999px;
+    background: url("../img/seletor-inativo.png") top left;
+}
+#Navegacao ol li a.ativo {
+    background: url("../img/seletor-ativo.png") top left;
+}
+
+/* Servicos
+---------------------------------------------------------------------------------- */
+#Servicos div {
+	width: 250px;
+    float: left;
+	margin-right:40px;
+}
+#Servicos .pravoce {
+    background: url("../img/icone-pravoce.png") no-repeat left top;
+}
+#Servicos .praempresa {
+    background: url("../img/icone-praempresa.png") no-repeat left top;
+}#Servicos .pransi {
+    background: url("../img/icone-pransi.png") no-repeat left top;
+}
+#Servicos h2 {
+    display: none;
+}
+#Servicos h3 {
+    padding: 5px 0px 0px 80px;
+	height: 70px;
+}
+#Servicos h3 a {
+	font-family: 'Roboto Condensed', Arial;
+    color:#000;
+	font-size: 20px;
+	font-weight: 400;
+	text-transform:capitalize;
+    line-height: 1.3em;
+}
+#Servicos ul {
+    padding-top: 15px;
+    list-style: none;
+}
+#Servicos ul li a {
+	font-family: 'Roboto Condensed', Arial;
+    color:#000;
+
+	font-size: 16px;
+    color: #00436A;
+    display: block;
+    padding:10px 0 10px 0px;
+    border-bottom: solid 1px #E9E9E9;
+
+}
+#Servicos ul li a:hover {
+    background: #f0f0f0;
+	padding-left:10px;
+}
+#Servicos em {
+	display:block;
+	color:#F8A519;
+	font-style:normal;
+}
+
+/* HOME */
+#Conteudo.home #Servicos {
+	background: url("../img/sombra.png") top center no-repeat; /* fica por cima dos destaques */
+	height: 300px;
+	position: relative;
+	top:2px;
+	padding:0 0 100px 60px;
+	z-index:2;
+}
+#Conteudo.solucoes #Servicos {
+	padding:60px 0 0 60px;
+}
+
+/* INTERNAS */
+#Conteudo.solucoes #Texto {
+	border-bottom:solid 1px #7E9FB4;
+	padding-bottom:60px;
+	padding-right: 455px;
+}
+/* Servicos NSI */
+body.nsi #Conteudo #Texto {
+	background: url("../img/nsi-fundo.png") no-repeat left top;
+	padding-right: 455px;
+}
+/* Para Voce */
+body.voce #Conteudo #Texto {
+	background: url("../img/servicos-fundo.png") no-repeat left top; /* Foto: http://www.flickr.com/photos/mjtmail/2517549993/sizes/o/in/photostream/ */
+	padding-right: 455px;
+}
+
+
+
+
+/* A Empresa
+---------------------------------------------------------------------------------- */
+
+body.a-empresa #Conteudo #Texto {
+	background: url("../img/empresa-fundo.png") no-repeat left top;
+	padding-right: 455px;
+}
+
+
+
+/* Parceiros
+---------------------------------------------------------------------------------- */
+#Parceiros {
+	clear: both;
+	background:#BECFD9;
+	padding:20px 0px 20px 35px;
+	
+	position:relative;
+	top:-43px;
+	z-index:1;
+	
+	height: 460px;
+}
+#Parceiros h2 a {
+	font-family: 'Roboto Condensed', Arial;
+	font-size:250%;
+	letter-spacing:-2px;
+	color:#FFF;
+	font-weight: 200;
+	display:block;
+	padding:10px 0;
+}
+#Parceiros ul {
+	list-style:none;
+}
+#Parceiros ul li {
+	float:left;
+	padding: 0 41px 41px 0;
+}
+
+
+
+
+/* Internas - Geral
+---------------------------------------------------------------------------------- */
+#Conteudo {
+	min-height:300px;
+	*height:300px;
+}
+#Conteudo h2.titulo {
+	font-family: 'Roboto Condensed', Arial;
+    font-size: 30px;
+    color:#FFF;
+	
+	padding: 20px 0 20px 30px;
+	margin-top:15px;
+    height: 39px;
+	
+    overflow: hidden;
+	/* background: url("../img/rodape.png") no-repeat 0 -160px #00436A; */
+	background:#00436A;
+	border-bottom:solid 7px #7E9FB4;
+}
+#Conteudo #Texto {
+	padding:20px 55px 0px 55px;
+	
+    font-family: 'Roboto', Arial;
+	font-size: 100%;
+	line-height:1.7em;
+	background: url("../img/internas-fundo.png") no-repeat left top;
+}	
+
+#Conteudo #Texto h3 {
+    font-family: 'Roboto Condensed', Arial;
+	font-size: 120%;
+	padding: 20px 0;
+}
+
+
+/* Noticias
+---------------------------------------------------------------------------------- */
+#Conteudo.noticias #Texto {
+	padding:10px 45px 0px 45px;
+	position:relative; /* pra posicionar a data dentro dele */
+}
+#Conteudo.noticias #Texto p {
+	line-height: 1.7em;
+	padding-bottom:30px;
+}
+#Noticias h2 {
+    display: none;
+}
+#Noticias h3 a {
+	font-family: 'Roboto Condensed', Arial;
+    color:#000;
+	font-size: 20px;
+	font-weight: 400;
+	text-transform:capitalize;
+    line-height: 1.3em;
+	padding-left:10px;
+}
+#Noticias ul {
+    padding-top: 15px;
+    list-style: none;
+}
+#Noticias ul li a {
+	font-family: 'Roboto Condensed', Arial;
+    color:#000;
+
+	font-size: 16px;
+    color: #00436A;
+    display: block;
+    padding:10px;
+    border-bottom: solid 1px #E9E9E9;
+}
+#Noticias ul li a:hover {
+    background: #f0f0f0;
+	padding-left:10px;
+}
+#Noticias em {
+	display:block;
+	color:#F8A519;
+	font-style:normal;
+	float:left;
+	padding-right:20px;
+}
+#Conteudo.noticias h2 a {
+	color:#FFF;
+}
+#Conteudo.noticias #Texto h4 {
+	display:block;
+	color:#F8A519;
+	font-style:normal;
+	font-weight:200;
+	
+	position: absolute;
+	top:35px;
+	right: 55px;
+}
+#Conteudo.noticia #Texto img {
+	max-width:850px;	
+	height:auto;
+}
+#Conteudo.noticia #Texto ul {
+	padding: 0 50px 20px 50px;
+}
+#Conteudo.noticia #Texto ul li {
+	padding-bottom:30px;
+}
+#Conteudo.noticia #Texto a {
+	color: #F8A519;
+}
+#Conteudo.noticia #Texto a:hover {
+	border-bottom: solid 1px;
+}
+/* Contato
+---------------------------------------------------------------------------------- */
+body.contato #Texto {
+	position:relative;
+}
+body.contato #Formulario  {
+	position:absolute;
+	top:23px;
+	left:500px;
+	
+	width:405px;
+}
+body.contato  .alerta {
+	position:absolute;
+	top:20px;
+	right:0;
+	
+	font-size:75%;
+	color:#FF0000;
+}
+body.contato form .campos {
+	float:left;
+}
+body.contato form input {
+	width:170px;
+	height:30px;
+	padding:0 10px;
+	border: solid 1px #BBB;
+	
+	font-family: 'Roboto', Arial;
+}
+body.contato form .email {
+	float:right;	
+}
+body.contato form .mensagem textarea {
+	width:384px;
+	height: 60px;
+	padding:10px;
+	
+	font-family: 'Roboto', Arial;
+	border: solid 1px #BBB;
+}
+body.contato form .enviar input {
+	position: absolute;
+	top:255px;
+	left:0;	
+	width:406px;
+}
+
+body.contato form div.wpcf7-response-output {
+	background:#FFF !important;
+	position:absolute;
+	left:-10px !important;
+	top: -90px !important;
+	width: 375px;
+}
+body.contato form .wpcf7-not-valid-tip {
+	position:absolute !important;
+	left:0px !important;
+	top:-5px !important;
+	width:185px;	
+}
+
+
+
+/* Rodape
+---------------------------------------------------------------------------------- */
+
+html {
+    background: url("../img/rodape.png") no-repeat bottom center; /* fundo do rodape no html pra entrar na div de parceiros */
+}
+#Rodape {
+    clear: both;
+	position:relative;
+
+    font-family: Arial;
+    font-size:70%;
+	text-align:right;
+	color:#FFF;
+	height:270px;
+}
+body.home #Rodape {
+	height:150px;
+}
+#Rodape a { 
+	color:#FFF
+}
+#Rodape a:hover {
+    text-decoration: underline;
+}
+#Rodape #Cartao {
+	position: absolute;
+	bottom:60px;
+	right:35px;
+}
+#Rodape .adr {
+	position:absolute;
+	right: 200px;
+	width:400px;
+}
+#Rodape .org,
+#Rodape .url,
+#Rodape .microformats {
+	display:none;
+}
