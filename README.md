@@ -22,3 +22,4 @@ https://glacial.gitlab.io/2012-hcs-seguros
 ## Screenshot
 
 ![screenshot](design/home.png)
+
