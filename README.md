@@ -16,7 +16,7 @@
 
 ## Live Demo
 
-https://glacial.gitlab.io/2012-hcs-seguros
+https://marceloglacial.github.io/2012-hcs-seguros/front-end/
 
 
 ## Screenshot
